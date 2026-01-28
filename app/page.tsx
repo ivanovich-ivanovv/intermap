@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { useScroll, useTransform } from 'framer-motion';
 import { translations } from '@/lib/translations';
-import Background3D from '@/components/Background3D';
+import BackgroundSwitch from '@/components/BackgroundSwitch';
 import Navigation from '@/components/Navigation';
 import HeroSection from '@/components/HeroSection';
 import FeaturesSection from '@/components/FeaturesSection';
@@ -26,8 +26,8 @@ export default function Home() {
 
   return (
     <div className="min-h-screen relative">
-      {/* 3D Background - Fixed for entire page */}
-      <Background3D />
+      {/* Switchable 2D/3D Background - Fixed for entire page */}
+      <BackgroundSwitch />
       
       {/* Main Content - All sections transparent to show 3D background */}
       <div className="relative z-0">

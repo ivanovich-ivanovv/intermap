@@ -1,0 +1,49 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="appGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6b35;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#f7931e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff8c42;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="512" height="512" rx="120" fill="url(#appGradient)"/>
+  
+  <!-- Map Grid Pattern -->
+  <g opacity="0.2">
+    <path d="M100 100 L412 100 M100 200 L412 200 M100 300 L412 300 M100 400 L412 400" 
+          stroke="white" stroke-width="2"/>
+    <path d="M100 100 L100 400 M200 100 L200 400 M300 100 L300 400 M412 100 L412 400" 
+          stroke="white" stroke-width="2"/>
+  </g>
+  
+  <!-- Large Pin in Center -->
+  <g transform="translate(256, 180)">
+    <path d="M0 -80C-35 -80 -64 -51 -64 -16C-64 19 0 80 0 80C0 80 64 19 64 -16C64 -51 35 -80 0 -80Z" 
+          fill="white" opacity="0.95"/>
+    <circle cx="0" cy="-16" r="24" fill="url(#appGradient)"/>
+    <path d="M0 -28L8 -12L0 -16L-8 -12Z" fill="white"/>
+  </g>
+  
+  <!-- Smaller Pins -->
+  <g transform="translate(160, 280)">
+    <path d="M0 -30C-13 -30 -24 -19 -24 -6C-24 7 0 30 0 30C0 30 24 7 24 -6C24 -19 13 -30 0 -30Z" 
+          fill="white" opacity="0.7"/>
+    <circle cx="0" cy="-6" r="8" fill="url(#appGradient)"/>
+  </g>
+  
+  <g transform="translate(352, 320)">
+    <path d="M0 -30C-13 -30 -24 -19 -24 -6C-24 7 0 30 0 30C0 30 24 7 24 -6C24 -19 13 -30 0 -30Z" 
+          fill="white" opacity="0.7"/>
+    <circle cx="0" cy="-6" r="8" fill="url(#appGradient)"/>
+  </g>
+  
+  <!-- Route Path -->
+  <path d="M160 250 Q256 220 352 290" 
+        stroke="white" 
+        stroke-width="4" 
+        stroke-dasharray="8,8"
+        fill="none"
+        opacity="0.6"/>
+</svg>
